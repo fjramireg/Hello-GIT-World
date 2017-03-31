@@ -1,0 +1,98 @@
+RESUME:
+
+1. cd Hello_GIT_world/
+2. git remote -v
+3. git fetch
+4. git merge origin/master
+5. git branch <branch_name>
+6. git checkout <branch_name>
+7. EDIT
+8. git add <folder or document name>
+9. git diff
+10. git status
+11. git commit -m "message"
+
+
+
+
+
+
+Now that you've merged origin/master into your local master branch, you're ready to contribute some work of your own. The workflow for Git collaborations typically follows this order:
+
+    Fetch and merge changes from the remote
+    Create a branch to work on a new project feature
+    Develop the feature on your branch and commit your work
+    Fetch and merge from the remote again (in case new commits were made while you were working)
+    Push your branch up to the remote for review
+
+Steps 1 and 4 are a safeguard against merge conflicts, which occur when two branches contain file changes that cannot be merged with the git merge command. Step 5 involves git push, a command you will learn in the next exercise.
+1.
+
+Enter this command:
+
+cd my-quizzes
+
+to change directories into the my-quizzes directory.
+2.
+
+Enter the Git command:
+
+git branch <branch_name>
+
+to create a branch to develop questions for the biology quiz. Name the branch bio-questions.
+
+Note: be careful to spell the name "bio-questions" exactly as it appears.
+3.
+
+Switch to your new branch with the command:
+
+git checkout <branch_name>
+
+replacing <branch_name> with the name of the new branch.
+4.
+
+On your branch, open biology.txt in the code editor.
+
+Add a biology question to the file and some sample answers. For example:
+
+  What is an animal that hunts and eats other animals called?
+  a) herbivore
+  b) prey 
+  c) ecosystem 
+  d) predator
+
+5.
+
+Add biology.txt to the staging area.
+6.
+
+Commit the work to the repository with a commit message.
+
+
+Now it's time to share our work with Sally.
+
+The command:
+
+git push origin your_branch_name
+
+will push your branch up to the remote, origin. From there, Sally can review your branch and merge your work into the master branch, making it part of the definitive project version.
+Instructions
+1.
+
+Enter this command
+
+cd my-quizzes
+
+to change directories into the my-quizzes directory.
+2.
+
+Push your branch up to the remote.
+
+In the output, notice the line:
+
+To /home/ccuser/workspace/curriculum/science-quizzes
+ * [new branch]      bio-questions -> bio-questions
+
+Git informs us that the branch bio-questions was pushed up to the remote. Sally can now review your new work and can merge it into the remote's master branch.
+
+
