@@ -11,7 +11,7 @@ RESUME:
 9. git diff
 10. git status
 11. git commit -m "message"
-
+12. git push origin <branch-name>
 
 
 
